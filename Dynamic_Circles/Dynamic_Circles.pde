@@ -1,13 +1,14 @@
-
+float value = 255;
 void setup(){
-  background(255,255,255);
+  background(value);
   size(600,600);
   
 }
 
 
 void draw(){
-  background(255,255,255);
+  
+  background(value);
   float posx = mouseX;
   float posy = mouseY;  
   float d = 100;
@@ -22,4 +23,11 @@ void draw(){
 
   void mouseClicked() {
    System.out.println("Joshua Miller 9/2/19"); 
-  }
+   if (value == 0){
+     value = 255;
+   }else if(value == 255)
+     value = 0;
+     
+     
+     
+}
