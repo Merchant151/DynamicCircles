@@ -16,13 +16,13 @@ void draw(){
 
   for(int i = 0;i<100;i= i+20){
    circle(posx,posy,d);
-   posx = posx -100 +i;//added i distance because 100px distance seemed too far
+   posx = posx -100 - (d/2);
    d = d - 20;
   }
 }
 
   void mouseClicked() {
-   System.out.println("Joshua Miller 9/2/19"); 
+   System.out.println("Joshua Miller 9/3/19"); 
    if (value == 0){
      value = 255;
    }else if(value == 255)
